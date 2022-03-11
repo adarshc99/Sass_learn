@@ -1,0 +1,8 @@
+@mixin style($color,$width,$border,$margin) 
+{
+    background: $color;
+    width: $width;
+    border: $border;
+    margin: $margin;
+
+}

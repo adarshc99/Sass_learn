@@ -1,0 +1,18 @@
+#Second
+{
+    background: red;
+    width: $div-width;
+    border: $border-given;
+    margin: $margin-div;
+
+    // .content
+    // {
+    //     color:rgb(21, 255, 0);
+    //     margin: 5%;
+    // }
+    .content
+    {
+        color:rgb(119, 0, 255);
+    }
+    @extend #first;
+}

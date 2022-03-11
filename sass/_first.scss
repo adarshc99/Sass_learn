@@ -1,0 +1,14 @@
+#first
+{
+    @include style(black,80% ,2px solid black ,10%);
+    .content
+    {
+        color:aqua;
+        margin: 2%;
+       
+    }
+    .content:hover
+    {
+        background: rgb(0, 140, 255);
+    }
+}

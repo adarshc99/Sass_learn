@@ -1,0 +1,12 @@
+#Third
+{
+    background: red;
+    width: $div-width;
+    border: $border-given;
+    margin: $margin-div;
+    .content
+    {
+        color:rgba(255, 208, 0, 0.747);
+    }
+    @extend #first;
+}

@@ -1,0 +1,17 @@
+$div-width:80%;
+$border-given:2px solid black;
+$margin-div:10%;
+@import "mixins";
+@import "first";
+@import "second";
+@import "third";
+body
+{
+    background: rgb(175, 44, 110);
+}
+hr
+{
+    width: 80%;
+    border: 5px solid orange;
+}
+

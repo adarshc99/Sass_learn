@@ -1,47 +1,18 @@
-#first, #Second, #Third {
-  background: black;
-  width: 80%;
-  border: 2px solid black;
-  margin: 10%;
+@media screen and (max-width: 900px) {
+  body {
+    background-color: #d3a40b;
+  }
 }
 
-#first .content, #Second .content, #Third .content {
-  color: aqua;
-  margin: 2%;
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #1ee983;
+  }
 }
 
-#first .content:hover, #Second .content:hover, #Third .content:hover {
-  background: #008cff;
-}
-
-#Second {
-  background: red;
-  width: 80%;
-  border: 2px solid black;
-  margin: 10%;
-}
-
-#Second .content {
-  color: #7700ff;
-}
-
-#Third {
-  background: red;
-  width: 80%;
-  border: 2px solid black;
-  margin: 10%;
-}
-
-#Third .content {
-  color: rgba(255, 208, 0, 0.747);
-}
-
-body {
-  background: #af2c6e;
-}
-
-hr {
-  width: 80%;
-  border: 5px solid orange;
+@media screen and (max-width: 400px) {
+  body {
+    background-color: #600eca;
+  }
 }
 /*# sourceMappingURL=main.css.map */

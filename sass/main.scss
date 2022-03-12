@@ -1,17 +1,98 @@
-$div-width:80%;
-$border-given:2px solid black;
-$margin-div:10%;
-@import "mixins";
-@import "first";
-@import "second";
-@import "third";
-body
+// $div-width:80%;
+// $border-given:8px solid black;
+// $margin-div:10%;
+// @import "mixins";
+// @import "first";
+// @import "second";
+// @import "third";
+// body
+// {
+//     background: rgb(175, 44, 110);
+// }
+// hr
+// {
+//     width: 80%;
+//     border: 5px solid orange;
+// }
+
+
+// @mixin interpolation($margin-name,$margin,$selector,$selector-type)
+// {
+//     #{$selector-type}#{$selector}  // interploation is a used to conatinate string using #{string}
+//     {
+//         margin-#{$margin-name}:$margin;
+//     }
+// }
+// @include interpolation(left,60px,first,"#");
+// @include interpolation(right,60px,Second,"#");
+
+// $selector-type is for selctor type ex:- class or id
+// $selector is for selector name
+// $margin-name is for margin type ex- margin-left or margin-right
+
+
+// @function style()
+// {
+//     @return unquote("80%");
+// }
+// #Second
+// {
+    // background-color: style();
+//     width:style();
+//     text-transform:capitalize;
+// // }
+// $list : 10px 20px 30px;
+
+// #name-given
+// {
+//     padding: join($list,10px 20px);
+// }
+// #first
+// {
+//     width: 80%;
+//     &:hover
+//     {
+//         background: black;
+//     }
+// }
+// hr{
+//     transform: rotate(135deg);
+//     // border-style: dotted;
+//     border-width: 20px;
+//     &:hover
+//     {
+       
+//        background: orange;
+       
+//     }
+// }
+
+@mixin media($width) 
 {
-    background: rgb(175, 44, 110);
-}
-hr
-{
-    width: 80%;
-    border: 5px solid orange;
+    @media screen and (max-width:$width)
+     {
+        @content;    
+    }    
 }
 
+@include media(900px)
+{
+    body{
+        background-color: rgb(211, 164, 11);
+    }
+    
+}
+@include media(600px)
+{
+    body{
+        background-color: rgb(30, 233, 131);
+    }
+}
+@include media(400px)
+{
+    body
+    {
+        background-color: rgb(96, 14, 202);
+    }
+    
+}
